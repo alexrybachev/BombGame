@@ -46,10 +46,12 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         configuration.baseBackgroundColor = .clear
         
         let button = UIButton(configuration: configuration)
-        button.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
+        button.setImage(UIImage(systemName: "circle"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    private var isChecked = false
     
     // MARK: - Init
     
@@ -96,12 +98,20 @@ class CategoryCollectionViewCell: UICollectionViewCell {
             checkButton.heightAnchor.constraint(equalToConstant: 40)
         ])
         
+        checkButton.addTarget(self, action: #selector(checkButtonTapped), for: .touchUpInside)
+        
     }
     
     // MARK: - Configure Cell
     func configure(for category: String, with image: String) {
         titleCategoryLabel.text = category
         categoryImageView.image = UIImage(named: image)
+    }
+    
+    @objc func checkButtonTapped() {
+        isChecked.toggle()
+        let image = isChecked ? UIImage(systemName: "checkmark.circle.fill") : UIImage(systemName: "circle")
+        checkButton.setImage(image, for: .normal)
     }
     
     
