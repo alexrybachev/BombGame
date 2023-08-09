@@ -19,6 +19,8 @@
 		D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53F00D92A80ECFB0004D2CA /* Main.storyboard */; };
 		D53F00DD2A80ECFC0004D2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53F00DC2A80ECFC0004D2CA /* Assets.xcassets */; };
 		D53F00E02A80ECFC0004D2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53F00DE2A80ECFC0004D2CA /* LaunchScreen.storyboard */; };
+		D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F7072A83C60D0033F19C /* MainViewController.swift */; };
+		D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F7082A83C60D0033F19C /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D53F00DC2A80ECFC0004D2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53F00DF2A80ECFC0004D2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53F00E12A80ECFC0004D2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D542F7072A83C60D0033F19C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D542F7082A83C60D0033F19C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D53F00D72A80ECFB0004D2CA /* ViewController.swift */,
+				D542F7072A83C60D0033F19C /* MainViewController.swift */,
 				28CE62162A81686D000ABA8D /* CategoryViewController */,
 			);
 			path = Controllers;
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D53F00D92A80ECFB0004D2CA /* Main.storyboard */,
+				D542F7082A83C60D0033F19C /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 				D53F00E02A80ECFC0004D2CA /* LaunchScreen.storyboard in Resources */,
 				D53F00DD2A80ECFC0004D2CA /* Assets.xcassets in Resources */,
 				D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */,
+				D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +220,7 @@
 				28CE621A2A8168AC000ABA8D /* CategoryCollectionViewCell.swift in Sources */,
 				D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */,
 				28CE62262A82B6CA000ABA8D /* DataDelegate.swift in Sources */,
+				D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
