@@ -63,8 +63,17 @@ class GameEndViewController: UIViewController {
 
 
     func setupNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
+        // пробный вариант убрать фон
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "yellowText")
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.lightText]
+        appearance.shadowImage = UIImage()
+
+        navigationItem.standardAppearance = appearance
+        navigationItem.scrollEdgeAppearance = appearance
+        
+        
         
         let label = UILabel()
         label.text = "Игра"
@@ -72,9 +81,6 @@ class GameEndViewController: UIViewController {
         label.textColor = UIColor(named: "violetText")
         
         navigationItem.titleView = label
-        
-      
-        
     }
 
 }

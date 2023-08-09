@@ -13,16 +13,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
-        
+       
     }
-
-
-    @IBAction func nextButton(_ sender: UIButton) {
-        let gameEndVC = GameEndViewController()
-        navigationController?.pushViewController(gameEndVC, animated: true)
-    }
-    
     
 }
 
