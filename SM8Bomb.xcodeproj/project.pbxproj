@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8E431672A824D1600B28D09 /* GameEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E431652A824D1600B28D09 /* GameEndViewController.swift */; };
+		C8E431682A824D1600B28D09 /* GameEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E431662A824D1600B28D09 /* GameEndViewController.xib */; };
 		D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5050D452A810F0200B1005A /* ColorsExtension.swift */; };
 		D53F00D42A80ECFB0004D2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */; };
 		D53F00D62A80ECFB0004D2CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8E431652A824D1600B28D09 /* GameEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndViewController.swift; sourceTree = "<group>"; };
+		C8E431662A824D1600B28D09 /* GameEndViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameEndViewController.xib; sourceTree = "<group>"; };
 		D5050D452A810F0200B1005A /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
 		D53F00D02A80ECFB0004D2CA /* SM8Bomb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SM8Bomb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				D53F00D72A80ECFB0004D2CA /* ViewController.swift */,
+				C8E431652A824D1600B28D09 /* GameEndViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -58,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D53F00D92A80ECFB0004D2CA /* Main.storyboard */,
+				C8E431662A824D1600B28D09 /* GameEndViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			files = (
 				D53F00E02A80ECFC0004D2CA /* LaunchScreen.storyboard in Resources */,
 				D53F00DD2A80ECFC0004D2CA /* Assets.xcassets in Resources */,
+				C8E431682A824D1600B28D09 /* GameEndViewController.xib in Resources */,
 				D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53F00D82A80ECFB0004D2CA /* ViewController.swift in Sources */,
+				C8E431672A824D1600B28D09 /* GameEndViewController.swift in Sources */,
 				D53F00D42A80ECFB0004D2CA /* AppDelegate.swift in Sources */,
 				D53F00D62A80ECFB0004D2CA /* SceneDelegate.swift in Sources */,
 				D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */,
