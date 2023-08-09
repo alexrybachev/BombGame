@@ -84,6 +84,8 @@
 		D53F00D22A80ECFB0004D2CA /* SM8Bomb */ = {
 			isa = PBXGroup;
 			children = (
+				D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */,
+				D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */,
 				D5DB35BA2A827DA2006649D3 /* Application */,
 				D5050D422A810E5700B1005A /* Models */,
 				D5050D442A810E9D00B1005A /* View */,
@@ -99,8 +101,6 @@
 		D5DB35BA2A827DA2006649D3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */,
-				D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
