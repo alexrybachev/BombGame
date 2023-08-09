@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C8E431672A824D1600B28D09 /* GameEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E431652A824D1600B28D09 /* GameEndViewController.swift */; };
 		C8E431682A824D1600B28D09 /* GameEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E431662A824D1600B28D09 /* GameEndViewController.xib */; };
+		C8E4316B2A83984100B28D09 /* DelaGothicOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8E4316A2A83984100B28D09 /* DelaGothicOne-Regular.ttf */; };
 		D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5050D452A810F0200B1005A /* ColorsExtension.swift */; };
 		D53F00D42A80ECFB0004D2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */; };
 		D53F00D62A80ECFB0004D2CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		C8E431652A824D1600B28D09 /* GameEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndViewController.swift; sourceTree = "<group>"; };
 		C8E431662A824D1600B28D09 /* GameEndViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameEndViewController.xib; sourceTree = "<group>"; };
+		C8E4316A2A83984100B28D09 /* DelaGothicOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DelaGothicOne-Regular.ttf"; sourceTree = "<group>"; };
 		D5050D452A810F0200B1005A /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
 		D53F00D02A80ECFB0004D2CA /* SM8Bomb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SM8Bomb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8E431692A83979100B28D09 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C8E4316A2A83984100B28D09 /* DelaGothicOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D5050D422A810E5700B1005A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 				D5050D422A810E5700B1005A /* Models */,
 				D5050D442A810E9D00B1005A /* View */,
 				D5050D432A810E6600B1005A /* Controllers */,
+				C8E431692A83979100B28D09 /* Fonts */,
 				D53F00DC2A80ECFC0004D2CA /* Assets.xcassets */,
 				D53F00DE2A80ECFC0004D2CA /* LaunchScreen.storyboard */,
 				D53F00E12A80ECFC0004D2CA /* Info.plist */,
@@ -161,6 +172,7 @@
 				D53F00E02A80ECFC0004D2CA /* LaunchScreen.storyboard in Resources */,
 				D53F00DD2A80ECFC0004D2CA /* Assets.xcassets in Resources */,
 				C8E431682A824D1600B28D09 /* GameEndViewController.xib in Resources */,
+				C8E4316B2A83984100B28D09 /* DelaGothicOne-Regular.ttf in Resources */,
 				D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

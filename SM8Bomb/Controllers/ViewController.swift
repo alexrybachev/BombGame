@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .black
+        
     }
 
 
+    @IBAction func nextButton(_ sender: UIButton) {
+        let gameEndVC = GameEndViewController()
+        navigationController?.pushViewController(gameEndVC, animated: true)
+    }
+    
+    
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -11,31 +11,122 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameEndViewController" customModule="SM8Bomb" customModuleProvider="target">
             <connections>
+                <outlet property="anotherTask" destination="d3h-Vt-bJT" id="k2G-Uc-fmO"/>
+                <outlet property="labelGame" destination="yRZ-4x-Nxo" id="OjF-Ee-oP2"/>
+                <outlet property="startAgain" destination="m4U-wx-P46" id="oTi-Fr-f9f"/>
+                <outlet property="titleTask" destination="80q-L4-rNE" id="P0h-Xl-kUN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdH-5g-Yih">
-                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <items>
-                        <navigationItem title="Игра" id="nej-Hc-5cM">
+                        <navigationItem id="nej-Hc-5cM">
                             <barButtonItem key="rightBarButtonItem" image="pause" id="G8m-xn-WFn"/>
                         </navigationItem>
                     </items>
                 </navigationBar>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explosion" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-bc-Wz4">
+                    <rect key="frame" x="82" y="220.5" width="250" height="300"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В следующем раунде после каждого ответа хлопать в ладоши" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="80q-L4-rNE">
+                    <rect key="frame" x="20" y="550.5" width="374" height="87.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                    <color key="textColor" name="violetText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-Xg-GdY">
+                    <rect key="frame" x="69" y="658" width="276" height="174"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-Vt-bJT">
+                            <rect key="frame" x="0.0" y="0.0" width="276" height="80"/>
+                            <color key="backgroundColor" name="violetText"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="03p-xv-xMh"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="pyT-4I-hbx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Другое Задание">
+                                <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Другое" subtitle="Задание" titlePadding="-10" titleAlignment="center">
+                                <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <fontDescription key="subtitleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="baseForegroundColor" name="yellowText"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4U-wx-P46">
+                            <rect key="frame" x="0.0" y="94" width="276" height="80"/>
+                            <color key="backgroundColor" name="violetText"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="98e-Ob-BG0"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="r8R-ir-fyX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Другое Задание">
+                                <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Начать" subtitle="Заново" titlePadding="-8" titleAlignment="center">
+                                <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <fontDescription key="subtitleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="baseForegroundColor" name="yellowText"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRZ-4x-Nxo">
+                    <rect key="frame" x="20" y="92" width="374" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="yellowText"/>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="80q-L4-rNE" secondAttribute="trailing" constant="20" id="3FW-KJ-yEZ"/>
+                <constraint firstItem="g1Z-Xg-GdY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="69" id="4pP-JW-9cD"/>
+                <constraint firstItem="fXg-bc-Wz4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="82" id="EO2-f9-oia"/>
+                <constraint firstItem="fXg-bc-Wz4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N9r-sy-oDm"/>
+                <constraint firstItem="80q-L4-rNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UMd-ez-eVZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g1Z-Xg-GdY" secondAttribute="trailing" constant="69" id="XP1-qa-T1A"/>
+                <constraint firstItem="g1Z-Xg-GdY" firstAttribute="top" secondItem="80q-L4-rNE" secondAttribute="bottom" constant="20" id="Yff-sc-bJg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fXg-bc-Wz4" secondAttribute="bottom" constant="341.5" id="ojV-NP-cZF"/>
+                <constraint firstItem="80q-L4-rNE" firstAttribute="top" secondItem="fXg-bc-Wz4" secondAttribute="bottom" constant="30" id="sMj-1X-d7o"/>
+                <constraint firstItem="g1Z-Xg-GdY" firstAttribute="centerX" secondItem="80q-L4-rNE" secondAttribute="centerX" id="wiu-Ew-euB"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="-11.383928571428571"/>
         </view>
+        <navigationController id="bPX-sI-Gb6">
+            <navigationBar key="navigationBar" contentMode="scaleToFill" id="26V-Gu-Mm5">
+                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </navigationBar>
+            <viewControllers>
+                <tableViewController id="WCu-Dv-yLs">
+                    <navigationItem key="navigationItem" title="Root View Controller" id="R7y-1C-GDf">
+                        <barButtonItem key="rightBarButtonItem" image="pause" id="QJD-FF-RjF"/>
+                    </navigationItem>
+                </tableViewController>
+            </viewControllers>
+            <point key="canvasLocation" x="-574" y="-11"/>
+        </navigationController>
     </objects>
     <resources>
+        <image name="explosion" width="249" height="300"/>
         <image name="pause" width="37" height="38"/>
+        <namedColor name="violetText">
+            <color red="0.54500001668930054" green="0.23899999260902405" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="yellowText">
             <color red="0.98000001907348633" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
