@@ -27,6 +27,8 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Категории"
+        
+        setupBarAppereance()
         setupUI()
         
     }
@@ -49,6 +51,15 @@ class CategoryViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
         ])
         
+    }
+    
+    private func setupBarAppereance() {
+        let navBarAppearance = UINavigationBarAppearance()
+
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.violetText,
+                                                .font: UIFont.systemFont(ofSize: 39, weight: .heavy)
+        ]
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
     }
     
     // MARK: - UICollectionViewLayout

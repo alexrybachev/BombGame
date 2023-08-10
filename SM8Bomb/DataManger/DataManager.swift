@@ -124,6 +124,17 @@ struct DataManager {
                  isSelected: true)
     ]
     
+    let panishment = ["Стоять на одной ноге",
+                      "Отжаться 5 раз",
+                      "Присесть 10 раз",
+                      "Спеть песню Розенбаума",
+                      "Рассказать анекдот",
+                      "Посчитать от 10 до 1",
+                      "Нарисовать дерево",
+                      "Прыгнуть 10 раз",
+                      "Выпить стакан воды",
+                      "Прокукарекать"]
+    
 }
 
 extension DataManager {
@@ -131,5 +142,9 @@ extension DataManager {
     /// Изменение выбранного статуса для категории
     mutating func changeSelection(for indexPath: Int) {
         categoriesData[indexPath].isSelected.toggle()
+    }
+    
+    func getRandomPanishment() -> [String] {
+        panishment.shuffled()
     }
 }
