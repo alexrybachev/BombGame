@@ -105,8 +105,8 @@
 				D53F00D72A80ECFB0004D2CA /* ViewController.swift */,
 				D542F7072A83C60D0033F19C /* MainViewController.swift */,
 				68ADDA382A83FC6A0076447B /* GameViewController.swift */,
-				28CE62162A81686D000ABA8D /* CategoryViewController */,
 				C84478BA2A8503A5004E9897 /* EndGameViewController.swift */,
+				28CE62162A81686D000ABA8D /* CategoryViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
