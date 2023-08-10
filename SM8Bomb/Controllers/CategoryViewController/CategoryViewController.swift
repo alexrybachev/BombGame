@@ -12,7 +12,7 @@ class CategoryViewController: UIViewController {
     // MARK: - PRivate Properties
     
     private let dataSource = DataSource()
-    private let delegate = DataDelegate()
+//    private let delegate = DataDelegate()
     
     private lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
@@ -37,7 +37,7 @@ class CategoryViewController: UIViewController {
         view.setGradientColor()
 
         collectionView.dataSource = dataSource
-        collectionView.delegate = delegate
+//        collectionView.delegate = delegate
         
         view.addSubview(collectionView)
         collectionView.backgroundColor = .clear
