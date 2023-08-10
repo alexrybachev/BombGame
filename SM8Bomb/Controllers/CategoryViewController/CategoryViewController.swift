@@ -12,7 +12,7 @@ class CategoryViewController: UIViewController {
     // MARK: - PRivate Properties
     
     private let dataSource = DataSource()
-    private let delegate = DataDelegate()
+//    private let delegate = DataDelegate()
     
     private lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
@@ -26,9 +26,8 @@ class CategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Категории"
+        setupNavBar()
         setupUI()
-        
     }
     
     // MARK: - Setup UI
@@ -37,7 +36,7 @@ class CategoryViewController: UIViewController {
         view.setGradientColor()
 
         collectionView.dataSource = dataSource
-        collectionView.delegate = delegate
+//        collectionView.delegate = delegate
         
         view.addSubview(collectionView)
         collectionView.backgroundColor = .clear
@@ -49,6 +48,17 @@ class CategoryViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
         ])
         
+    }
+    
+    private func setupNavBar() {
+        title = "Категории"
+        
+        let navBar = navigationController?.navigationBar
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.largeTitleTextAttributes = [.font: UIFont.systemFont(ofSize: 36, weight: .heavy)]
+        
+        navBar?.compactScrollEdgeAppearance = appearance
     }
     
     // MARK: - UICollectionViewLayout

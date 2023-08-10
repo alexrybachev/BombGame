@@ -9,15 +9,10 @@ import UIKit
 
 class DataSource: NSObject, UICollectionViewDataSource {
     
-    // MARK: - Test Data
-    
-    private let categories = ["Спорт", "Хобби", "Про Жизнь", "Личности", "Искусство и Кино", "Природа"]
-    private let categoryImages = ["Sport", "Hobby", "Life", "Person", "Cinema", "Nature"]
-    
     // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        categories.count
+        DataManager.shared.categoriesData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -28,10 +23,9 @@ class DataSource: NSObject, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        let category = categories[indexPath.item]
-        let image = categoryImages[indexPath.item]
+        let category = DataManager.shared.categoriesData[indexPath.item]
         
-        cell.configure(for: category, with: image)
+        cell.configure(for: category.nameCategory, with: category.imageCategory, and: category.isSelected)
         
         return cell
     }
