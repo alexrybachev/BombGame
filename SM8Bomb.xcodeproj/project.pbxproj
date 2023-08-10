@@ -12,6 +12,10 @@
 		28CE621E2A8170F8000ABA8D /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE621D2A8170F8000ABA8D /* DataSource.swift */; };
 		28CE62202A817F72000ABA8D /* GradienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE621F2A817F72000ABA8D /* GradienView.swift */; };
 		28CE62262A82B6CA000ABA8D /* DataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE62252A82B6CA000ABA8D /* DataDelegate.swift */; };
+		68ADDA392A83FC6A0076447B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ADDA382A83FC6A0076447B /* GameViewController.swift */; };
+		68ADDA3C2A83FCB50076447B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68ADDA3B2A83FCB50076447B /* SnapKit */; };
+		68ADDA3F2A83FCD30076447B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 68ADDA3E2A83FCD30076447B /* Lottie */; };
+		68ADDA412A83FD110076447B /* bombAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 68ADDA402A83FD110076447B /* bombAnimation.json */; };
 		D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5050D452A810F0200B1005A /* ColorsExtension.swift */; };
 		D53F00D42A80ECFB0004D2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */; };
 		D53F00D62A80ECFB0004D2CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */; };
@@ -29,6 +33,8 @@
 		28CE621D2A8170F8000ABA8D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		28CE621F2A817F72000ABA8D /* GradienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradienView.swift; sourceTree = "<group>"; };
 		28CE62252A82B6CA000ABA8D /* DataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDelegate.swift; sourceTree = "<group>"; };
+		68ADDA382A83FC6A0076447B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		68ADDA402A83FD110076447B /* bombAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bombAnimation.json; sourceTree = "<group>"; };
 		D5050D452A810F0200B1005A /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
 		D53F00D02A80ECFB0004D2CA /* SM8Bomb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SM8Bomb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68ADDA3C2A83FCB50076447B /* SnapKit in Frameworks */,
+				68ADDA3F2A83FCD30076447B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,7 @@
 			children = (
 				D53F00D72A80ECFB0004D2CA /* ViewController.swift */,
 				D542F7072A83C60D0033F19C /* MainViewController.swift */,
+				68ADDA382A83FC6A0076447B /* GameViewController.swift */,
 				28CE62162A81686D000ABA8D /* CategoryViewController */,
 			);
 			path = Controllers;
@@ -132,6 +141,7 @@
 				D5050D432A810E6600B1005A /* Controllers */,
 				28CE621C2A8170E0000ABA8D /* Helpers */,
 				D53F00DC2A80ECFC0004D2CA /* Assets.xcassets */,
+				68ADDA402A83FD110076447B /* bombAnimation.json */,
 				D53F00DE2A80ECFC0004D2CA /* LaunchScreen.storyboard */,
 				D53F00E12A80ECFC0004D2CA /* Info.plist */,
 				D5050D452A810F0200B1005A /* ColorsExtension.swift */,
@@ -155,6 +165,10 @@
 			dependencies = (
 			);
 			name = SM8Bomb;
+			packageProductDependencies = (
+				68ADDA3B2A83FCB50076447B /* SnapKit */,
+				68ADDA3E2A83FCD30076447B /* Lottie */,
+			);
 			productName = SM8Bomb;
 			productReference = D53F00D02A80ECFB0004D2CA /* SM8Bomb.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +197,10 @@
 				Base,
 			);
 			mainGroup = D53F00C72A80ECFB0004D2CA;
+			packageReferences = (
+				68ADDA3A2A83FCB50076447B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				68ADDA3D2A83FCD30076447B /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = D53F00D12A80ECFB0004D2CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53F00E02A80ECFC0004D2CA /* LaunchScreen.storyboard in Resources */,
+				68ADDA412A83FD110076447B /* bombAnimation.json in Resources */,
 				D53F00DD2A80ECFC0004D2CA /* Assets.xcassets in Resources */,
 				D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */,
 				D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */,
@@ -220,6 +239,7 @@
 				28CE621A2A8168AC000ABA8D /* CategoryCollectionViewCell.swift in Sources */,
 				D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */,
 				28CE62262A82B6CA000ABA8D /* DataDelegate.swift in Sources */,
+				68ADDA392A83FC6A0076447B /* GameViewController.swift in Sources */,
 				D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +464,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68ADDA3A2A83FCB50076447B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		68ADDA3D2A83FCD30076447B /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68ADDA3B2A83FCB50076447B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68ADDA3A2A83FCB50076447B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		68ADDA3E2A83FCD30076447B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68ADDA3D2A83FCD30076447B /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D53F00C82A80ECFB0004D2CA /* Project object */;
 }
