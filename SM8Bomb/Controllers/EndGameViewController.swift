@@ -23,7 +23,6 @@ class EndGameViewController: UIViewController {
 
         labelGame.text = "Проигравший выполняет \n задание"
         
-        
         setupNavigationBar()
         setupButton()
     }
@@ -55,6 +54,4 @@ class EndGameViewController: UIViewController {
         startAgain.layer.shadowRadius = 5
         startAgain.layer.shadowOpacity = 0.7
     }
-    
-
 }
