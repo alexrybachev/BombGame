@@ -11,7 +11,6 @@ import SwiftUI
 import Lottie
 import AVFoundation
 
-
 class GameViewController: UIViewController {
   
   private var audioPlayers: [AVAudioPlayer] = []
@@ -67,12 +66,23 @@ class GameViewController: UIViewController {
     return element
   }()
   
-  
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "Game"
+    title = "Игра"
     setConstraints()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    stopMusic()
+    animationView.stop()
+  }
+  
+  func stopMusic() {
+    audioPlayers[0].stop()
+    audioPlayers[1].stop()
+    audioPlayers[2].stop()
+    animationView.stop()
   }
   
   @objc private func startButtonPressed() {
@@ -106,14 +116,22 @@ class GameViewController: UIViewController {
   
   private func playNextSound(index: Int) {
     guard index < audioPlayers.count else {
+      let endVC = EndGameViewController()
+      endVC.modalPresentationStyle = .fullScreen
+      navigationController?.pushViewController(endVC, animated: true)
       return
     }
     let audioPlayer = audioPlayers[index]
     audioPlayer.play()
     
-    DispatchQueue.main.asyncAfter(deadline: .now() + audioPlayer.duration) {
-      self.playNextSound(index: index + 1)
+    DispatchQueue.main.asyncAfter(deadline: .now() + audioPlayer.duration) { [weak self] in
+      guard self == self else { return }
+      self?.playNextSound(index: index + 1)
     }
+  }
+  
+  deinit {
+    print("Game")
   }
 }
 
@@ -125,7 +143,6 @@ extension GameViewController {
     view.addSubview(textLabel)
     view.addSubview(startButton)
     view.addSubview(bombImage)
-    
     
     bombImage.snp.makeConstraints { make in
       make.left.equalTo(74)
