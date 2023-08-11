@@ -32,11 +32,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func rulesButtonPressed(_ sender: UIButton) {
-//        let rootVC = RulesViewController()
-//        rootVC.modalPresentationStyle = .fullScreen
-//        self.navigationItem.title = ""
-//        self.navigationController?.navigationBar.tintColor = .black
-//        navigationController?.pushViewController(rootVC, animated: true)
+        let rootVC = RulesViewControllerTwo()
+        rootVC.modalPresentationStyle = .fullScreen
+        self.navigationItem.title = ""
+        self.navigationController?.navigationBar.tintColor = .black
+        navigationController?.pushViewController(rootVC, animated: true)
     }
     
 }
