@@ -9,9 +9,12 @@ import UIKit
 import SnapKit
 import SwiftUI
 import Lottie
+import AVFoundation
 
 
 class GameViewController: UIViewController {
+  
+  private var audioPlayers: [AVAudioPlayer] = []
   
   private lazy var frameView: UIView = {
     let element = UIView()
@@ -23,8 +26,7 @@ class GameViewController: UIViewController {
     var element = LottieAnimationView()
     element = .init(name: "bombAnimation")
     element.contentMode = .scaleAspectFill
-    element.loopMode = .loop
-    element.animationSpeed = 0.5
+    element.animationSpeed = 0.2492
     element.play()
     return element
   }()
@@ -61,19 +63,57 @@ class GameViewController: UIViewController {
     element.backgroundColor = .violetText
     element.tintColor = .yellowText
     element.layer.cornerRadius = 40
+    element.addTarget(self, action: #selector(pushButton), for: .touchUpInside)
     return element
   }()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      setConstraints()
-    }
+  
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    title = "Game"
+    setConstraints()
+  }
   
   @objc private func startButtonPressed() {
     startButton.isHidden = true
     textLabel.text = "Назовите вид зимнего спорта"
     bombImage.isHidden = true
     frameView.isHidden = false
+  }
+  
+  @objc private func pushButton(sender: UIButton) {
+    playSound()
+    playNextSound(index: 0)
+  }
+  
+  private func playSound() {
+    guard let urlOne = Bundle.main.url(forResource: "wick", withExtension: "wav"),
+          let urlTwo = Bundle.main.url(forResource: "wick", withExtension: "wav"),
+          let urlThree = Bundle.main.url(forResource: "exp", withExtension: "wav") else { return }
+
+    do {
+      let audioOne = try AVAudioPlayer(contentsOf: urlOne)
+      let audioTwo = try AVAudioPlayer(contentsOf: urlTwo)
+      let audioThree = try AVAudioPlayer(contentsOf: urlThree)
+      audioPlayers = [audioOne, audioTwo, audioThree]
+      audioPlayers.forEach { $0.prepareToPlay() }
+      
+    } catch {
+      print("Error loading sounds: \(error.localizedDescription)")
+    }
+  }
+  
+  private func playNextSound(index: Int) {
+    guard index < audioPlayers.count else {
+      return
+    }
+    let audioPlayer = audioPlayers[index]
+    audioPlayer.play()
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + audioPlayer.duration) {
+      self.playNextSound(index: index + 1)
+    }
   }
 }
 
