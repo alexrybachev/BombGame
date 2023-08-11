@@ -51,7 +51,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         return button
     }()
     
-    private var isChecked = false
+    private var isChecked = true
     
     // MARK: - Init
     
@@ -103,16 +103,20 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Configure Cell
-    func configure(for category: String, with image: String) {
+    func configure(for category: String, with image: String, and isSelected: Bool) {
         titleCategoryLabel.text = category
         categoryImageView.image = UIImage(named: image)
+        changeImageForButton(for: isSelected)
     }
     
     @objc func checkButtonTapped() {
         isChecked.toggle()
-        let image = isChecked ? UIImage(systemName: "checkmark.circle.fill") : UIImage(systemName: "circle")
-        checkButton.setImage(image, for: .normal)
+        changeImageForButton(for: isChecked)
     }
     
+    private func changeImageForButton(for isSelected: Bool) {
+        let image = isSelected ? UIImage(systemName: "checkmark.circle.fill") : UIImage(systemName: "circle")
+        checkButton.setImage(image, for: .normal)
+    }
     
 }
