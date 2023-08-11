@@ -16,7 +16,7 @@ struct Category {
 extension Category {
     
     /// Формирует рандомно вопросы в зависимости от выбранной категории
-    func getRandomQuestion() -> [String] {
+    static func getRandomQuestion() -> [String] {
         let questions = DataManager.shared.categoriesData
             .filter { $0.isSelected == true }
             .reduce([]) { result, category in

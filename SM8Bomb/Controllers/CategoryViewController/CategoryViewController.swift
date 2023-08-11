@@ -12,7 +12,6 @@ class CategoryViewController: UIViewController {
     // MARK: - PRivate Properties
     
     private let dataSource = DataSource()
-//    private let delegate = DataDelegate()
     
     private lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
@@ -21,7 +20,7 @@ class CategoryViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
-
+    
     // MARK: - Initial
     
     override func viewDidLoad() {
@@ -30,13 +29,28 @@ class CategoryViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        guard let cells = collectionView.visibleCells as? [CategoryCollectionViewCell] else { return }
+        
+        for cell in cells {
+            guard let indexPath = collectionView.indexPath(for: cell) else { return }
+            guard let currentImage = cell.checkButton.currentImage else { return }
+            if currentImage == UIImage(systemName: "checkmark.circle.fill") {
+                DataManager.shared.setupSelectionStatus(for: indexPath.item, with: true)
+            } else {
+                DataManager.shared.setupSelectionStatus(for: indexPath.item, with: false)
+            }
+        }
+    }
+    
     // MARK: - Setup UI
     
     private func setupUI() {
         view.setGradientColor()
-
+        
         collectionView.dataSource = dataSource
-//        collectionView.delegate = delegate
         
         view.addSubview(collectionView)
         collectionView.backgroundColor = .clear

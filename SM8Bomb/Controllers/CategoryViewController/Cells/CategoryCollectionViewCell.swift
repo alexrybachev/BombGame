@@ -40,7 +40,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
-    private lazy var checkButton: UIButton = {
+    lazy var checkButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.baseForegroundColor = .white
         configuration.baseBackgroundColor = .clear
@@ -110,6 +110,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func checkButtonTapped() {
+        print("isChecked = \(isChecked)")
         isChecked.toggle()
         changeImageForButton(for: isChecked)
     }
