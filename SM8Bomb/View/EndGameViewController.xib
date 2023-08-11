@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EndGameViewController" customModule="SM8Bomb" customModuleProvider="target">
+            <connections>
+                <outlet property="anotherTask" destination="PQH-b9-a9l" id="nJY-Vq-DGD"/>
+                <outlet property="labelGame" destination="xVQ-qr-Zcs" id="dVe-9h-7IH"/>
+                <outlet property="startAgain" destination="hiG-E4-w6s" id="rLY-Ad-0Rj"/>
+                <outlet property="titleTask" destination="idM-Np-rnU" id="Ywo-N6-SRJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-4v-vmo">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-qr-Zcs">
+                    <rect key="frame" x="16" y="91" width="361" height="33.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explosion" translatesAutoresizingMaskIntoConstraints="NO" id="flU-yM-nEV">
+                    <rect key="frame" x="72" y="198" width="249" height="300"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В следующем раунде после каждого ответа хлопать в ладоши" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="idM-Np-rnU">
+                    <rect key="frame" x="16" y="520" width="361" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="0hg-kR-jak"/>
+                        <constraint firstAttribute="width" constant="361" id="XQG-tV-Phg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
+                    <color key="textColor" red="0.50482481720000005" green="0.18683516980000001" blue="0.65426480769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yPU-2Z-hBk">
+                    <rect key="frame" x="59" y="626" width="275" height="176"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQH-b9-a9l">
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="80"/>
+                            <color key="backgroundColor" red="0.50482481720000005" green="0.18683516980000001" blue="0.65426480769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="RQF-Hx-MdG"/>
+                                <constraint firstAttribute="height" constant="80" id="mPJ-qk-Wtq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Другое Задание">
+                                <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Другое" subtitle="Задание" titlePadding="-10" titleAlignment="center">
+                                <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <fontDescription key="subtitleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="baseForegroundColor" name="yellowText"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiG-E4-w6s">
+                            <rect key="frame" x="0.0" y="96" width="275" height="80"/>
+                            <color key="backgroundColor" red="0.50482481720000005" green="0.18683516980000001" blue="0.65426480769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="A5P-qD-nOG"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="wrq-a5-u79"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="24"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Другое Задание">
+                                <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </state>
+                            <buttonConfiguration key="configuration" style="plain" title="Начать" subtitle="Заново" titlePadding="-8" titleAlignment="center">
+                                <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <fontDescription key="subtitleFontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="baseForegroundColor" name="yellowText"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="yellowText"/>
+            <constraints>
+                <constraint firstItem="flU-yM-nEV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3qW-rV-6Rs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xVQ-qr-Zcs" secondAttribute="trailing" constant="16" id="6Nt-91-Hdg"/>
+                <constraint firstItem="idM-Np-rnU" firstAttribute="top" secondItem="flU-yM-nEV" secondAttribute="bottom" constant="22" id="7Zg-Pi-2cm"/>
+                <constraint firstItem="idM-Np-rnU" firstAttribute="leading" secondItem="xVQ-qr-Zcs" secondAttribute="leading" id="8Aj-GX-J1A"/>
+                <constraint firstItem="yPU-2Z-hBk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="59" id="Hb2-1C-QP7"/>
+                <constraint firstAttribute="trailing" secondItem="H1W-4v-vmo" secondAttribute="trailing" id="ICS-gM-Kb4"/>
+                <constraint firstItem="xVQ-qr-Zcs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KiU-6W-rDn"/>
+                <constraint firstItem="yPU-2Z-hBk" firstAttribute="top" secondItem="idM-Np-rnU" secondAttribute="bottom" constant="18" id="NtA-5A-oSc"/>
+                <constraint firstItem="H1W-4v-vmo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UXL-bU-dm2"/>
+                <constraint firstItem="flU-yM-nEV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="72" id="cJ3-gk-Z1d"/>
+                <constraint firstItem="H1W-4v-vmo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gxf-Br-lQ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="flU-yM-nEV" secondAttribute="trailing" constant="72" id="i2C-nJ-YMd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yPU-2Z-hBk" secondAttribute="bottom" constant="16" id="mzn-rm-yxN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yPU-2Z-hBk" secondAttribute="trailing" constant="59" id="urg-zh-Qxk"/>
+                <constraint firstAttribute="bottom" secondItem="H1W-4v-vmo" secondAttribute="bottom" id="vFK-ju-Itf"/>
+                <constraint firstItem="xVQ-qr-Zcs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="y4B-47-wfH"/>
+            </constraints>
+            <point key="canvasLocation" x="226.71755725190837" y="-13.380281690140846"/>
+        </view>
+        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="wwh-CZ-xAj">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="-63" y="-405"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="817"/>
+        <image name="explosion" width="249" height="300"/>
+        <namedColor name="yellowText">
+            <color red="0.98000001907348633" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
