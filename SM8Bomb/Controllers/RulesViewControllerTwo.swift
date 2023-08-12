@@ -9,10 +9,25 @@ import UIKit
 
 class RulesViewControllerTwo: UIViewController {
 
+    @IBOutlet var labelSevenRow: UILabel!
+    @IBOutlet var buttonHelp: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupNavBar("Помощь")
+        navigationController?.navigationBar.barTintColor = UIColor.yellowText
+        view.setGradientColor()
+        let labelText = labelSevenRow.text!
+        
+        let attributedText = NSMutableAttributedString(string: labelText)
+        
+        let purpleRange = (labelText as NSString).range(of: "“С Заданиями”")
+        
+        attributedText.addAttributes([.foregroundColor: UIColor.violetText,
+                                      .font:UIFont.systemFont(ofSize: 17, weight: .heavy)],
+                                     range: purpleRange)
+        
+        labelSevenRow.attributedText = attributedText
     }
 
 
