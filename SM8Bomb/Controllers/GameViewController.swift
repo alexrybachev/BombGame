@@ -30,13 +30,6 @@ class GameViewController: UIViewController {
     return element
   }()
   
-  private lazy var backgroundColor: UIImageView = {
-    let element = UIImageView()
-    element.image = UIImage(named: "background")
-    element.contentMode = .scaleAspectFill
-    return element
-  }()
-  
   private lazy var textLabel: UILabel = {
     let element = UILabel()
     element.text = "Нажмите \"Запустить\" чтобы начать игру"
@@ -68,6 +61,7 @@ class GameViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+      view.setGradientColor()
     setupNavBar("Игра")
     setConstraints()
   }
@@ -136,7 +130,6 @@ class GameViewController: UIViewController {
 extension GameViewController {
   private func setConstraints() {
     frameView.addSubview(animationView)
-    view.addSubview(backgroundColor)
     view.addSubview(frameView)
     view.addSubview(textLabel)
     view.addSubview(startButton)
@@ -169,10 +162,6 @@ extension GameViewController {
     frameView.snp.makeConstraints { make in
       make.centerX.centerY.equalToSuperview()
       make.width.height.equalTo(400)
-    }
-    
-    backgroundColor.snp.makeConstraints { make in
-      make.edges.equalToSuperview()
     }
   }
 }
