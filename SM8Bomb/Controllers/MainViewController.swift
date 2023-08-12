@@ -42,7 +42,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func rulesButtonPressed(_ sender: UIButton) {
-        let rootVC = RulesViewControllerTwo()
+        let rootVC = EndGameViewController()
         rootVC.modalPresentationStyle = .fullScreen
         self.navigationItem.title = ""
         self.navigationController?.navigationBar.tintColor = .black
