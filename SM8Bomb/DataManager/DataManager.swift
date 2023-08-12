@@ -144,7 +144,21 @@ extension DataManager {
         categoriesData[indexPath].isSelected.toggle()
     }
     
+    /// Изменение выбранного статуса для одного из значений массива
+    mutating func setupSelectionStatus(for item: Int, with status: Bool) {
+        categoriesData[item].isSelected = status
+    }
+    
     func getRandomPanishment() -> [String] {
         panishment.shuffled()
+    }
+    
+    func checkedIsSelectedStatus() -> Bool {
+        let isSelectedStatus = categoriesData
+            .filter { $0.isSelected == true }
+            .reduce(0) { result, category in
+                category.isSelected == true ? (result + 1) : result
+            }
+        return isSelectedStatus > 0 ? true : false
     }
 }

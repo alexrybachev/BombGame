@@ -40,7 +40,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
-    private lazy var checkButton: UIButton = {
+    lazy var checkButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         configuration.baseForegroundColor = .white
         configuration.baseBackgroundColor = .clear
@@ -51,7 +51,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         return button
     }()
     
-    private var isChecked = true
+    private var isChecked: Bool!
     
     // MARK: - Init
     
@@ -104,6 +104,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Configure Cell
     func configure(for category: String, with image: String, and isSelected: Bool) {
+        isChecked = isSelected
         titleCategoryLabel.text = category
         categoryImageView.image = UIImage(named: image)
         changeImageForButton(for: isSelected)
@@ -115,7 +116,9 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func changeImageForButton(for isSelected: Bool) {
-        let image = isSelected ? UIImage(systemName: "checkmark.circle.fill") : UIImage(systemName: "circle")
+        let image = isSelected
+            ? UIImage(systemName: "checkmark.circle.fill")
+            : UIImage(systemName: "circle")
         checkButton.setImage(image, for: .normal)
     }
     
