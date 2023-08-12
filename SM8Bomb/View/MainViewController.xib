@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SM8Bomb" customModuleProvider="target">
             <connections>
+                <outlet property="startButton" destination="mOF-ly-RdD" id="hTK-WU-YZd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

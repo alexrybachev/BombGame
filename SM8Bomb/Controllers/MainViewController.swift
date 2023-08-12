@@ -9,9 +9,20 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+   
+    @IBOutlet weak var startButton: UIButton!
+    
+    var startButtonStatus = true
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
+        startButtonStatus = DataManager.shared.checkedIsSelectedStatus()
+        startButtonEnabled(startButtonStatus)
     }
 
     @IBAction func startButtonPressed(_ sender: UIButton) {
@@ -28,7 +39,6 @@ class MainViewController: UIViewController {
         self.navigationItem.title = ""
         self.navigationController?.navigationBar.tintColor = .black
         navigationController?.pushViewController(rootVC, animated: true)
-//        present(rootVC, animated: true)
     }
     
     @IBAction func rulesButtonPressed(_ sender: UIButton) {
@@ -37,6 +47,16 @@ class MainViewController: UIViewController {
         self.navigationItem.title = ""
         self.navigationController?.navigationBar.tintColor = .black
         navigationController?.pushViewController(rootVC, animated: true)
+    }
+    
+    func startButtonEnabled(_ enabled: Bool) -> () {
+        if enabled {
+            startButton.isHighlighted = false
+            startButton.isEnabled = true
+        } else {
+            startButton.isHighlighted = true
+            startButton.isEnabled = false
+        }
     }
     
 }
