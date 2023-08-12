@@ -24,10 +24,8 @@ class DataSource: NSObject, UICollectionViewDataSource {
         }
         
         let category = DataManager.shared.categoriesData[indexPath.item]
-        print("status for button \(category.isSelected)")
         
         cell.configure(for: category.nameCategory, with: category.imageCategory, and: category.isSelected)
-        print("cell button \(cell.checkButton.currentImage)")
         
         return cell
     }

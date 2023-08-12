@@ -152,4 +152,13 @@ extension DataManager {
     func getRandomPanishment() -> [String] {
         panishment.shuffled()
     }
+    
+    func checkedIsSelectedStatus() -> Bool {
+        let isSelectedStatus = categoriesData
+            .filter { $0.isSelected == true }
+            .reduce(0) { result, category in
+                category.isSelected == true ? (result + 1) : result
+            }
+        return isSelectedStatus > 0 ? true : false
+    }
 }

@@ -78,13 +78,11 @@ class GameViewController: UIViewController {
     animationView.stop()
   }
   
-  func stopMusic() {
-    audioPlayers[0].stop()
-    audioPlayers[1].stop()
-    audioPlayers[2].stop()
-    animationView.stop()
-  }
-  
+    func stopMusic() {
+        audioPlayers.forEach { $0.stop() }
+        animationView.stop()
+    }
+    
   @objc private func startButtonPressed() {
     startButton.isHidden = true
     textLabel.text = "Назовите вид зимнего спорта"
