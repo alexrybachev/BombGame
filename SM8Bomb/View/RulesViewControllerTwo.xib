@@ -26,19 +26,19 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852.33333333333337"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBN-bC-Zhc">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852.33333333333348"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODo-s9-u9G">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="1500.3333333333333"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="G9B-nR-qhJ" userLabel="Stack View For Two Main View">
-                                    <rect key="frame" x="0.0" y="35" width="393" height="1455.3333333333333"/>
+                                    <rect key="frame" x="0.0" y="35" width="393" height="1455"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4z-dq-MlL" userLabel="First Main View">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="727.66666666666663"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="727.33333333333337"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j65-Rt-hym" userLabel="Stack View for First Tip">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="727.66666666666663"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="727.33333333333337"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7X0-I1-HW5" userLabel="Two Label View">
                                                             <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
@@ -62,10 +62,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYG-J1-6vj" userLabel="Seven labels View">
-                                                            <rect key="frame" x="0.0" y="100" width="393" height="627.66666666666663"/>
+                                                            <rect key="frame" x="0.0" y="100" width="393" height="627.33333333333337"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aLo-n0-H8o" userLabel="Seven labels Stack View">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="627.66666666666663"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="627.33333333333337"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7A2-9R-jlb">
                                                                             <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
@@ -143,13 +143,13 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8nA-Rw-45w" userLabel="Second PatStack View">
-                                                                            <rect key="frame" x="0.0" y="135.00000000000003" width="393" height="492.66666666666674"/>
+                                                                            <rect key="frame" x="0.0" y="134.99999999999997" width="393" height="492.33333333333326"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fm7-AS-qJr">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="492.66666666666669"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="492.33333333333331"/>
                                                                                     <subviews>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hxn-uX-POM" userLabel="Since Third to Seven Stack View">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="492.66666666666669"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="492.33333333333331"/>
                                                                                             <subviews>
                                                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="3.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gad-8a-8ck">
                                                                                                     <rect key="frame" x="0.0" y="1" width="30" height="97.333333333333343"/>
@@ -177,7 +177,7 @@
                                                                                             </constraints>
                                                                                         </stackView>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lV2-db-HMP" userLabel="Five labels stack">
-                                                                                            <rect key="frame" x="35" y="0.0" width="358" height="492.66666666666669"/>
+                                                                                            <rect key="frame" x="35" y="0.0" width="358" height="492.33333333333331"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На экране появляется вопрос “Назовите Фрукт”." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6S-he-pWR">
                                                                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="98.666666666666671"/>
@@ -247,7 +247,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-Uc-cJA" userLabel="Second Main View">
-                                            <rect key="frame" x="0.0" y="727.66666666666674" width="393" height="727.66666666666674"/>
+                                            <rect key="frame" x="0.0" y="727.33333333333348" width="393" height="727.66666666666652"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xvs-pu-Yum">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="727.66666666666663"/>
@@ -256,7 +256,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iO5-NW-tka">
-                                                                    <rect key="frame" x="121.00000000000001" y="33" width="151.33333333333337" height="33.666666666666657"/>
+                                                                    <rect key="frame" x="121.00000000000001" y="33.333333333333258" width="151.33333333333337" height="33.666666666666657"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Категории" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPh-DQ-Acq">
                                                                             <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="33.666666666666664"/>
@@ -290,7 +290,7 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Можно выбрать сразу несколько категорий для игры." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWy-gl-ByJ">
-                                                                                    <rect key="frame" x="0.0" y="120.33333333333337" width="393" height="100.33333333333331"/>
+                                                                                    <rect key="frame" x="0.0" y="120.33333333333326" width="393" height="100.33333333333331"/>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -351,7 +351,6 @@
                                 <constraint firstItem="G9B-nR-qhJ" firstAttribute="leading" secondItem="ODo-s9-u9G" secondAttribute="leading" id="CGu-bc-oct"/>
                                 <constraint firstAttribute="bottom" secondItem="G9B-nR-qhJ" secondAttribute="bottom" constant="10" id="dEd-iL-HNg"/>
                                 <constraint firstAttribute="width" constant="393" id="dQd-TM-hyN"/>
-                                <constraint firstAttribute="height" constant="1500" id="dTF-j3-A62"/>
                                 <constraint firstItem="G9B-nR-qhJ" firstAttribute="top" secondItem="ODo-s9-u9G" secondAttribute="top" constant="35" id="hdh-0Y-9zQ"/>
                                 <constraint firstAttribute="trailing" secondItem="G9B-nR-qhJ" secondAttribute="trailing" id="m2D-nE-lL0"/>
                             </constraints>
