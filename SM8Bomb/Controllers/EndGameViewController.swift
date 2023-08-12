@@ -54,14 +54,15 @@ class EndGameViewController: UIViewController {
     }
     
     @IBAction func startAgainButtonPressed(_ sender: UIButton) {
-//        let rootVC = GameViewController()
-//        rootVC.modalPresentationStyle = .fullScreen
-//        self.navigationItem.title = ""
-//        self.navigationController?.navigationBar.tintColor = .black
-//        navigationController?.pushViewController(rootVC, animated: true)
-        
-        
-
+        let gameVC = GameViewController()
+        gameVC.modalPresentationStyle = .fullScreen
+        navigationItem.title = ""
+        navigationController?.navigationBar.tintColor = .black
+        navigationController?.pushViewController(gameVC, animated: true)
+    }
+    
+    deinit {
+        print("deinit EndGameVC")
     }
     
 }

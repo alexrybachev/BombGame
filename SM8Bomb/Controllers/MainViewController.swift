@@ -23,6 +23,10 @@ class MainViewController: UIViewController {
 
         startButtonStatus = DataManager.shared.checkedIsSelectedStatus()
         startButtonEnabled(startButtonStatus)
+        
+        let leftNavBarItem = UIBarButtonItem()
+        leftNavBarItem.title = ""
+        navigationItem.leftBarButtonItem = leftNavBarItem
     }
 
     @IBAction func startButtonPressed(_ sender: UIButton) {
@@ -57,6 +61,10 @@ class MainViewController: UIViewController {
             startButton.isHighlighted = true
             startButton.isEnabled = false
         }
+    }
+    
+    deinit {
+        print("deinit MainVC")
     }
     
 }
