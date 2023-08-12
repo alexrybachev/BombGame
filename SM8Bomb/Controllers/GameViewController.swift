@@ -61,12 +61,21 @@ class GameViewController: UIViewController {
         return element
     }()
     
-    private lazy var navButton: UIBarButtonItem = {
+    private lazy var leftNavButton: UIBarButtonItem = {
+        let bar = UIBarButtonItem()
+        bar.image = UIImage(systemName: "chevron.left")
+        bar.style = .plain
+        bar.target = self
+        bar.action = #selector(leftNavButtonTapped)
+        return bar
+    }()
+    
+    private lazy var rightNavButton: UIBarButtonItem = {
         let bar = UIBarButtonItem()
         bar.image = UIImage(named: "pause")
         bar.style = .plain
         bar.target = self
-        bar.action = #selector(navButtonTapped)
+        bar.action = #selector(rightNavButtonTapped)
         return bar
     }()
     
@@ -89,7 +98,8 @@ class GameViewController: UIViewController {
     // MARK: - Private Methods
     
     private func addNavButton() {
-        navigationItem.rightBarButtonItem = navButton
+        navigationItem.leftBarButtonItem = leftNavButton
+        navigationItem.rightBarButtonItem = rightNavButton
         if #available(iOS 16.0, *) {
             navigationItem.rightBarButtonItem?.isHidden = true
         } else {
@@ -108,15 +118,21 @@ class GameViewController: UIViewController {
         if #available(iOS 16.0, *) {
             navigationItem.rightBarButtonItem?.isHidden = false
         } else {
-            navigationItem.rightBarButtonItem = navButton
+            navigationItem.rightBarButtonItem = rightNavButton
         }
         playSound()
     }
     
-    @objc func navButtonTapped() {
+    @objc func rightNavButtonTapped() {
         pauseButtonPressed.toggle()
-        navButton.image = pauseButtonPressed ? UIImage(named: "play") : UIImage(named: "pause")
+        rightNavButton.image = pauseButtonPressed ? UIImage(named: "play") : UIImage(named: "pause")
         resumeSound()
+    }
+    
+    @objc func leftNavButtonTapped() {
+        let mainVC = MainViewController()
+        mainVC.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(mainVC, animated: true)
     }
     
     private func playSound() {
@@ -152,7 +168,7 @@ class GameViewController: UIViewController {
     }
     
     deinit {
-        print("Game")
+        print("deinit Game")
     }
 }
 
