@@ -68,7 +68,7 @@ class GameViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "Игра"
+    setupNavBar("Игра")
     setConstraints()
   }
   
