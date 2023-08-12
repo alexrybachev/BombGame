@@ -149,10 +149,12 @@ extension DataManager {
         categoriesData[item].isSelected = status
     }
     
+    /// Возвращает массив наказаний с рандомным перемешиванием
     func getRandomPanishment() -> [String] {
         panishment.shuffled()
     }
     
+    /// Проверяет массив категорий на отсутствие невыбранных вариантов, возвращает Bool
     func checkedIsSelectedStatus() -> Bool {
         let isSelectedStatus = categoriesData
             .filter { $0.isSelected == true }
@@ -160,5 +162,16 @@ extension DataManager {
                 category.isSelected == true ? (result + 1) : result
             }
         return isSelectedStatus > 0 ? true : false
+    }
+    
+    /// Формирует рандомно вопросы в зависимости от выбранной категории
+    func getRandomQuestion() -> [String] {
+        let questions = DataManager.shared.categoriesData
+            .filter { $0.isSelected == true }
+            .reduce([]) { result, category in
+                result + category.questions
+            }
+        
+        return questions.shuffled()
     }
 }
