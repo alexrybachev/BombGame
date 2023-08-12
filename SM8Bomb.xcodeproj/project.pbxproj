@@ -32,6 +32,7 @@
 		D53F00E02A80ECFC0004D2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53F00DE2A80ECFC0004D2CA /* LaunchScreen.storyboard */; };
 		D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F7072A83C60D0033F19C /* MainViewController.swift */; };
 		D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F7082A83C60D0033F19C /* MainViewController.xib */; };
+		D548C7682A8774FE003CBBFE /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D548C7672A8774FE003CBBFE /* NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		D53F00E12A80ECFC0004D2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D542F7072A83C60D0033F19C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D542F7082A83C60D0033F19C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D548C7672A8774FE003CBBFE /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				28CE621F2A817F72000ABA8D /* GradienView.swift */,
+				D548C7672A8774FE003CBBFE /* NavBar.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				28CE62202A817F72000ABA8D /* GradienView.swift in Sources */,
 				C84478BC2A8503A5004E9897 /* EndGameViewController.swift in Sources */,
 				28CE62182A816891000ABA8D /* CategoryViewController.swift in Sources */,
+				D548C7682A8774FE003CBBFE /* NavBar.swift in Sources */,
 				D53F00D82A80ECFB0004D2CA /* ViewController.swift in Sources */,
 				D53F00D42A80ECFB0004D2CA /* AppDelegate.swift in Sources */,
 				D53F00D62A80ECFB0004D2CA /* SceneDelegate.swift in Sources */,

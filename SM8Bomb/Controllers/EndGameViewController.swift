@@ -23,18 +23,18 @@ class EndGameViewController: UIViewController {
 
         labelGame.text = "Проигравший выполняет \n задание"
         
-        setupNavigationBar()
+        setupNavBar("Игра")
         setupButton()
     }
 
-    func setupNavigationBar() {
-        let label = UILabel()
-        label.text = "Игра"
-        label.textColor = UIColor(named: "violetText")
-        label.font = UIFont.systemFont(ofSize: 30, weight: .heavy)
-        
-        navigationItem.titleView = label
-    }
+//    func setupNavigationBar() {
+//        let label = UILabel()
+//        label.text = "Игра"
+//        label.textColor = UIColor(named: "violetText")
+//        label.font = UIFont.systemFont(ofSize: 30, weight: .heavy)
+//
+//        navigationItem.titleView = label
+//    }
 
     func setupButton(){
         startAgain.layer.cornerRadius = 40
