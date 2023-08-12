@@ -33,6 +33,8 @@
 		D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F7072A83C60D0033F19C /* MainViewController.swift */; };
 		D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F7082A83C60D0033F19C /* MainViewController.xib */; };
 		D548C7682A8774FE003CBBFE /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D548C7672A8774FE003CBBFE /* NavBar.swift */; };
+		D58B71712A87A9890069610F /* RulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58B71702A87A9880069610F /* RulesViewController.xib */; };
+		D58B71732A87A99D0069610F /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B71722A87A99D0069610F /* RulesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		D542F7072A83C60D0033F19C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D542F7082A83C60D0033F19C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		D548C7672A8774FE003CBBFE /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		D58B71702A87A9880069610F /* RulesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RulesViewController.xib; sourceTree = "<group>"; };
+		D58B71722A87A99D0069610F /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				844ED8BC2A86AC250019BE08 /* RulesViewControllerTwo.swift */,
+				D58B71722A87A99D0069610F /* RulesViewController.swift */,
 				D53F00D72A80ECFB0004D2CA /* ViewController.swift */,
 				D542F7072A83C60D0033F19C /* MainViewController.swift */,
 				68ADDA382A83FC6A0076447B /* GameViewController.swift */,
@@ -145,6 +150,7 @@
 		D5050D442A810E9D00B1005A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D58B71702A87A9880069610F /* RulesViewController.xib */,
 				844ED8BA2A86AC0E0019BE08 /* RulesViewControllerTwo.xib */,
 				D53F00D92A80ECFB0004D2CA /* Main.storyboard */,
 				D542F7082A83C60D0033F19C /* MainViewController.xib */,
@@ -261,6 +267,7 @@
 				68036AF32A86BC2E00C1A891 /* exp.wav in Resources */,
 				68ADDA412A83FD110076447B /* bombAnimation.json in Resources */,
 				D53F00DD2A80ECFC0004D2CA /* Assets.xcassets in Resources */,
+				D58B71712A87A9890069610F /* RulesViewController.xib in Resources */,
 				D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */,
 				D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */,
 				844ED8BB2A86AC0E0019BE08 /* RulesViewControllerTwo.xib in Resources */,
@@ -288,6 +295,7 @@
 				280654092A851FEC0079CAD1 /* Category.swift in Sources */,
 				844ED8BD2A86AC250019BE08 /* RulesViewControllerTwo.swift in Sources */,
 				68ADDA392A83FC6A0076447B /* GameViewController.swift in Sources */,
+				D58B71732A87A99D0069610F /* RulesViewController.swift in Sources */,
 				D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
