@@ -12,17 +12,3 @@ struct Category {
     let questions: [String]
     var isSelected: Bool
 }
-
-extension Category {
-    
-    /// Формирует рандомно вопросы в зависимости от выбранной категории
-    static func getRandomQuestion() -> [String] {
-        let questions = DataManager.shared.categoriesData
-            .filter { $0.isSelected == true }
-            .reduce([]) { result, category in
-                result + category.questions
-            }
-        
-        return questions.shuffled()
-    }
-}
