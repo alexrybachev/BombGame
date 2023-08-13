@@ -37,8 +37,8 @@
                     <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <size key="shadowOffset" width="2" height="4"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="bombMain" translatesAutoresizingMaskIntoConstraints="NO" id="pDS-jx-gK6">
-                    <rect key="frame" x="0.0" y="171.33333333333334" width="393" height="405.66666666666663"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="bombMain" translatesAutoresizingMaskIntoConstraints="NO" id="pDS-jx-gK6">
+                    <rect key="frame" x="9" y="171.33333333333334" width="375" height="405.66666666666663"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww9-ME-OcR">
                     <rect key="frame" x="59.666666666666657" y="681" width="274" height="79"/>
@@ -99,9 +99,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r8g-YM-PSv" secondAttribute="trailing" constant="7" id="0Zs-Ml-6Na"/>
+                <constraint firstItem="pDS-jx-gK6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4hX-sI-ges"/>
                 <constraint firstAttribute="trailing" secondItem="dtQ-kZ-X2M" secondAttribute="trailing" constant="-4" id="5Dk-XQ-zXo"/>
-                <constraint firstItem="pDS-jx-gK6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5f9-fR-TAd"/>
-                <constraint firstItem="pDS-jx-gK6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6rW-MU-kYy"/>
                 <constraint firstItem="r8g-YM-PSv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="95n-eW-sRY"/>
                 <constraint firstAttribute="bottom" secondItem="ORb-ce-uIz" secondAttribute="bottom" constant="15" id="AVo-xZ-tFG"/>
                 <constraint firstItem="mOF-ly-RdD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Brx-c6-QwK"/>
