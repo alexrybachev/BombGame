@@ -37,6 +37,7 @@ class GameViewController: UIViewController {
         element.text = "Нажмите \"Запустить\" чтобы начать игру"
         element.textAlignment = .center
         element.numberOfLines = 3
+        element.adjustsFontSizeToFitWidth = true
         element.font = UIFont.boldSystemFont(ofSize: 35)
         element.textColor = .violetText
         return element
@@ -46,6 +47,7 @@ class GameViewController: UIViewController {
         let element = UIImageView()
         element.image = UIImage(named: "bombSecond")
         element.backgroundColor = .clear
+        element.contentMode = .scaleAspectFill
         return element
     }()
     
@@ -194,21 +196,19 @@ extension GameViewController {
         view.addSubview(bombImage)
         
         bombImage.snp.makeConstraints { make in
-            make.left.equalTo(74)
-            make.top.equalTo(223)
-            make.height.equalTo(352)
-            make.width.equalTo(312)
+            make.centerX.centerY.equalToSuperview()
+            make.width.height.equalTo(UIScreen.main.bounds.width - 40)
         }
         
         startButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(669)
+            make.bottom.equalTo(-40)
             make.width.equalTo(274)
             make.height.equalTo(79)
         }
         
         textLabel.snp.makeConstraints { make in
-            make.top.equalTo(127)
+            make.top.equalTo(100)
             make.centerX.equalToSuperview()
             make.width.equalTo(329)
         }
@@ -219,7 +219,7 @@ extension GameViewController {
         
         frameView.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
-            make.width.height.equalTo(400)
+            make.width.height.equalTo(UIScreen.main.bounds.width - 40)
         }
     }
 }
