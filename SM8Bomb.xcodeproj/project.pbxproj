@@ -20,8 +20,6 @@
 		68ADDA3C2A83FCB50076447B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 68ADDA3B2A83FCB50076447B /* SnapKit */; };
 		68ADDA3F2A83FCD30076447B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 68ADDA3E2A83FCD30076447B /* Lottie */; };
 		68ADDA412A83FD110076447B /* bombAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 68ADDA402A83FD110076447B /* bombAnimation.json */; };
-		844ED8BB2A86AC0E0019BE08 /* RulesViewControllerTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844ED8BA2A86AC0E0019BE08 /* RulesViewControllerTwo.xib */; };
-		844ED8BD2A86AC250019BE08 /* RulesViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844ED8BC2A86AC250019BE08 /* RulesViewControllerTwo.swift */; };
 		C84478BC2A8503A5004E9897 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84478BA2A8503A5004E9897 /* EndGameViewController.swift */; };
 		C84478BD2A8503A5004E9897 /* EndGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84478BB2A8503A5004E9897 /* EndGameViewController.xib */; };
 		D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5050D452A810F0200B1005A /* ColorsExtension.swift */; };
@@ -50,8 +48,6 @@
 		68036AF22A86BC2E00C1A891 /* exp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = exp.wav; sourceTree = "<group>"; };
 		68ADDA382A83FC6A0076447B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		68ADDA402A83FD110076447B /* bombAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bombAnimation.json; sourceTree = "<group>"; };
-		844ED8BA2A86AC0E0019BE08 /* RulesViewControllerTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RulesViewControllerTwo.xib; sourceTree = "<group>"; };
-		844ED8BC2A86AC250019BE08 /* RulesViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewControllerTwo.swift; sourceTree = "<group>"; };
 		C84478BA2A8503A5004E9897 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		C84478BB2A8503A5004E9897 /* EndGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndGameViewController.xib; sourceTree = "<group>"; };
 		D5050D452A810F0200B1005A /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
@@ -139,7 +135,6 @@
 		D5050D432A810E6600B1005A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				844ED8BC2A86AC250019BE08 /* RulesViewControllerTwo.swift */,
 				D58B71722A87A99D0069610F /* RulesViewController.swift */,
 				D53F00D72A80ECFB0004D2CA /* ViewController.swift */,
 				D542F7072A83C60D0033F19C /* MainViewController.swift */,
@@ -154,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				D58B71702A87A9880069610F /* RulesViewController.xib */,
-				844ED8BA2A86AC0E0019BE08 /* RulesViewControllerTwo.xib */,
 				D53F00D92A80ECFB0004D2CA /* Main.storyboard */,
 				D542F7082A83C60D0033F19C /* MainViewController.xib */,
 				C84478BB2A8503A5004E9897 /* EndGameViewController.xib */,
@@ -274,7 +268,6 @@
 				D58B71712A87A9890069610F /* RulesViewController.xib in Resources */,
 				D53F00DB2A80ECFB0004D2CA /* Main.storyboard in Resources */,
 				D542F70A2A83C60D0033F19C /* MainViewController.xib in Resources */,
-				844ED8BB2A86AC0E0019BE08 /* RulesViewControllerTwo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +290,6 @@
 				28CE621A2A8168AC000ABA8D /* CategoryCollectionViewCell.swift in Sources */,
 				D5050D462A810F0200B1005A /* ColorsExtension.swift in Sources */,
 				280654092A851FEC0079CAD1 /* Category.swift in Sources */,
-				844ED8BD2A86AC250019BE08 /* RulesViewControllerTwo.swift in Sources */,
 				68ADDA392A83FC6A0076447B /* GameViewController.swift in Sources */,
 				D58B71732A87A99D0069610F /* RulesViewController.swift in Sources */,
 				D542F7092A83C60D0033F19C /* MainViewController.swift in Sources */,
