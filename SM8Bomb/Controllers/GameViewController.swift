@@ -198,10 +198,6 @@ extension GameViewController {
         bombImage.snp.makeConstraints { make in
             make.centerX.centerY.equalToSuperview()
             make.width.height.equalTo(UIScreen.main.bounds.width - 40)
-//            make.left.equalTo(74)
-//            make.top.equalTo(223)
-//            make.height.equalTo(352)
-//            make.width.equalTo(312)
         }
         
         startButton.snp.makeConstraints { make in
