@@ -91,6 +91,16 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		286207522A8936A400A1F4D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */,
+				D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */,
+				D53F00E12A80ECFC0004D2CA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		28CE62162A81686D000ABA8D /* CategoryViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +141,11 @@
 		D5050D432A810E6600B1005A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D58B71722A87A99D0069610F /* RulesViewController.swift */,
 				D542F7072A83C60D0033F19C /* MainViewController.swift */,
 				68ADDA382A83FC6A0076447B /* GameViewController.swift */,
 				C84478BA2A8503A5004E9897 /* EndGameViewController.swift */,
 				28CE62162A81686D000ABA8D /* CategoryViewController */,
+				D58B71722A87A99D0069610F /* RulesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,8 +179,7 @@
 		D53F00D22A80ECFB0004D2CA /* SM8Bomb */ = {
 			isa = PBXGroup;
 			children = (
-				D53F00D32A80ECFB0004D2CA /* AppDelegate.swift */,
-				D53F00D52A80ECFB0004D2CA /* SceneDelegate.swift */,
+				286207522A8936A400A1F4D8 /* App */,
 				280654042A851E430079CAD1 /* Models */,
 				280654052A851FB30079CAD1 /* DataManager */,
 				D5050D442A810E9D00B1005A /* View */,
@@ -180,7 +189,6 @@
 				D53F00DC2A80ECFC0004D2CA /* Assets.xcassets */,
 				68ADDA402A83FD110076447B /* bombAnimation.json */,
 				D53F00DE2A80ECFC0004D2CA /* LaunchScreen.storyboard */,
-				D53F00E12A80ECFC0004D2CA /* Info.plist */,
 				D5050D452A810F0200B1005A /* ColorsExtension.swift */,
 			);
 			path = SM8Bomb;
@@ -425,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B2V35TTRCM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SM8Bomb/Info.plist;
+				INFOPLIST_FILE = SM8Bomb/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -455,7 +463,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B2V35TTRCM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SM8Bomb/Info.plist;
+				INFOPLIST_FILE = SM8Bomb/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
