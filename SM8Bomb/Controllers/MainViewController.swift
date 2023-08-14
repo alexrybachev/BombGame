@@ -119,6 +119,11 @@ class MainViewController: UIViewController {
 //        navigationItem.leftBarButtonItem = leftNavBarItem
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        pulseImageGame()
+    }
+    
     // MARK: - Methods
     
     @objc func startButtonPressed() {
@@ -155,6 +160,19 @@ class MainViewController: UIViewController {
             startButton.isEnabled = false
         }
     }
+    
+    private func pulseImageGame() {
+        let scaleAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnimation.duration = 1
+        scaleAnimation.repeatCount = .infinity
+        scaleAnimation.autoreverses = true
+        scaleAnimation.fromValue = 0.9
+        scaleAnimation.toValue = 1.1
+        imageGame.layer.add(scaleAnimation, forKey: "scale")
+    }
+    
+    
+    // MARK: - Deinit
     
     deinit {
         print("deinit MainVC")
