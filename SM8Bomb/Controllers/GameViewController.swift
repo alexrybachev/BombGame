@@ -39,7 +39,7 @@ class GameViewController: UIViewController {
         element.numberOfLines = 3
         element.adjustsFontSizeToFitWidth = true
         element.font = UIFont.boldSystemFont(ofSize: 35)
-        element.textColor = .violetText
+        element.textColor = .violetColor
         return element
     }()
     
@@ -56,8 +56,8 @@ class GameViewController: UIViewController {
         element.setTitle("Запустить", for: .normal)
         element.addTarget(self, action: #selector(startButtonPressed), for: .touchUpInside)
         element.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
-        element.backgroundColor = .violetText
-        element.tintColor = .yellowText
+        element.backgroundColor = .violetColor
+        element.tintColor = .yellowColor
         element.layer.cornerRadius = 40
         element.addTarget(self, action: #selector(pushButton), for: .touchUpInside)
         return element
