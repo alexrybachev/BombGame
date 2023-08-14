@@ -81,16 +81,22 @@ class MainViewController: UIViewController {
     // кнопки для настроек и помощи
     
     private lazy var settingButton: CustomButton = {
+        let imageConfig = UIImage.SymbolConfiguration(textStyle: .largeTitle)
+        
         let button = CustomButton()
-        button.setImage(UIImage(systemName: "gearshape.fill"), for: .normal)
+        button.setImage(UIImage(systemName: "gearshape.fill", withConfiguration: imageConfig), for: .normal)
         button.addTarget(self, action: #selector(settingButtonTapped), for: .touchUpInside)
+        button.layer.cornerRadius = 29
         return button
     }()
     
     private lazy var rulesButton: CustomButton = {
+        let imageConfig = UIImage.SymbolConfiguration(textStyle: .largeTitle)
+        
         let button = CustomButton()
-        button.setImage(UIImage(systemName: "questionmark.circle"), for: .normal)
+        button.setImage(UIImage(systemName: "questionmark.circle", withConfiguration: imageConfig), for: .normal)
         button.addTarget(self, action: #selector(rulesButtonTapped), for: .touchUpInside)
+        button.layer.cornerRadius = 29
         return button
     }()
     
